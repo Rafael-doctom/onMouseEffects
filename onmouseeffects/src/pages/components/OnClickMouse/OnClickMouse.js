@@ -39,30 +39,41 @@ export default function OnClickMouse() {
 
             <ItemsList>
                 <ul class="lista">
-                    <li onClick={() => setSobreModal(true)}>
-                        Sobre
+                    <div>
+                        <li onClick={() => setSobreModal(true)}>
+                            Sobre
+                        </li>
 
-
-                    </li>
+                        <p onClick={() => setSobreModal(false)}> x</p>
+                    </div>
                     {
                         sobreModal ?
                             <h1>sobre aqui</h1>
                             : null
                     }
-                    <li onClick={() => setHabilidadesModal(true)}>
-                        Habilidades
+                    <div>
+
+                        <li onClick={() => setHabilidadesModal(true)}>
+                            Habilidades
+                        </li>
+
+                        <p onClick={() => setHabilidadesModal(false)}> x</p>
 
 
-                    </li>
+                    </div>
+
                     {
                         habilidadesModal ?
                             <h1>habilidades aqui</h1>
                             : null
                     }
-                    <li onClick={() => setContatosModal(true)}>
-                        Contato
+                    <div>
+                        <li onClick={() => setContatosModal(true)}>
+                            Contato
+                        </li>
 
-                    </li>
+                        <p onClick={() => setContatosModal(false)}> x</p>
+                    </div>
                     {
                         contatosModal ?
                             <h1>Contato aqui</h1>
