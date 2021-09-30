@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
-import styled from 'styled-components'
+
+import styled from 'styled-components';
 
 const TextCenter = styled.div`
     text-align:center;
     font-size:2rem;
     padding:1rem;
-    `
+    `;
+
+
 const ItemsList = styled.div`
     text-align:center;
     font-size:2rem;
@@ -22,7 +25,8 @@ const ItemsList = styled.div`
         list-style:none;
     }
    
-`
+`;
+
 
 export default function OnClickMouse() {
     const [sobreModal, setSobreModal] = useState(false)
@@ -84,4 +88,4 @@ export default function OnClickMouse() {
             </ItemsList>
         </>
     )
-}
+};
